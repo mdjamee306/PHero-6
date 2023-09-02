@@ -7,7 +7,7 @@ const loadCategory = async () => {
     data.data.slice(0, 4).forEach((category) => {
         const div = document.createElement("div");
         div.innerHTML = `
-        <a onclick="loadCategoryId(${category.category_id})" class="cursor-pointer text-lg font-medium px-5 py-3 bg-gray-300 text-black hover:text-white hover:bg-[#FF1F3D] rounded-lg">${category.category}</a>
+        <a onclick="loadCategoryId(${category.category_id})" class="cursor-pointer lg:text-lg font-medium px-5 py-3 bg-gray-300 text-black hover:text-white hover:bg-[#FF1F3D] rounded-lg">${category.category}</a>
         `;
         tabContainer.appendChild(div)
     });
