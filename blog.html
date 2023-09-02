@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- tailwind and daisy linkup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <!--  Accordion -->
+    <section>
+        <h2 class="text-6xl p-5 text-white bg-[#FF1F3D] font-bold text-center">BloG</h2>
+        <div class="container mx-auto mt-10 flex flex-col lg:flex-row justify-center items-center w-11/12">
+            <!-- acc parent -->
+            <div class="join join-vertical w-full">
+                <!-- acc one -->
+                <div class="collapse collapse-arrow join-item border border-black">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        Discuss the scope of var, let, and const
+                    </div>
+                    <div class="collapse-content text-gray-500">
+                        <p>Variables declared with "var" are function-scoped, which means they are visible and
+                            accessible within the function in which they are declared.</p> <br>
+                        <p>Variables declared with 'let' are block-scoped, which means they are visible and accessible
+                            only within the nearest enclosing block (usually denoted by {}), such as a loop or an if
+                            statement block.</p> <br>
+                        <p>Variables declared with 'const' are also block-scoped, just like 'let'. 'Const' variables, as
+                            the name suggests, are constants, and their values cannot be reassigned after declaration.
+                        </p>
+                    </div>
+                </div>
+                <!-- acc two -->
+                <div class="collapse collapse-arrow join-item border  border-black">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">
+                        Tell us the use cases of null and undefined
+                    </div>
+                    <div class="collapse-content text-gray-500">
+                        <p><span class="font-medium">null:</span><br>
+                            'null' as an intentional empty or blank value that you, as a programmer, set.<br><br>
+                            You use 'null' when you want to indicate that a variable or object should have no value or
+                            doesn't point to anything specific.<br><br>
+                            It's like saying, "I know this should be something, but for now, it's nothing."</p>
+                            <br>
+                        <p>
+                            <span class="font-medium">Undefined:</span> <br>
+                            'undefined' is more like the default state of a variable or object if you haven't given it a
+                            value. <br><br>
+                            It means that a variable has been declared but hasn't been assigned any value yet.<br><br>
+                            It's JavaScript's way of saying, "I don't know what this is supposed to be."
+                        </p>
+                    </div>
+                </div>
+                <!-- acc three -->
+                <div class="collapse collapse-arrow join-item border border-black">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">
+                        What do you mean by REST API?
+                    </div>
+                    <div class="collapse-content text-gray-500">
+                        <p><span class="font-medium">REST API</span> stands for Representational State Transfer Application Programming Interface. It's like a set of rules for how different software applications or systems can talk to each other over the internet.</p><br>
+                        <p class="font-semibold">Here's a simple example of using a REST API:</p>
+                        <p>Let's say you're building a website for a burger joint. You want to show the list of burgers they offer. <br> <br>
+
+                            1. To get this list, your website sends a GET request to the burger joint's REST API. <br>
+                            2. The API receives the request, fetches the list of burgers, and sends it back to your website. <br>                           3.Your website then displays the list of burgers on its menu page. <br><br>
+                            In this way, REST APIs allow different software systems to communicate and exchange data</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="./img/blog.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
